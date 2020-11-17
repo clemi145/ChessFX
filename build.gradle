@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+mainClassName = 'at.htl3r.chessfx.App'
+
+group 'at.htl3r'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+javafx {
+    version = "15"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
